@@ -17,12 +17,9 @@ find_package(ament_cmake REQUIRED)
 macro(build_lua)
   set(cmake_commands)
   set(cmake_configure_args -Wno-dev;-DCMAKE_INSTALL_PREFIX=${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install)
-
   include(ExternalProject)
-
-  set( lua_source_path ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install/src/lua-ext )
-  set( lua_cmake_file_path ${lua_source_path}/CMakeLists.txt )
-
+  set(lua_source_path ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install/src/lua-ext)
+  set(lua_cmake_file_path ${lua_source_path}/CMakeLists.txt)
   externalproject_add(lua-ext
     PREFIX            ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install
     INSTALL_DIR       ${CMAKE_INSTALL_PREFIX}
