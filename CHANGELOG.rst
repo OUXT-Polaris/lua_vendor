@@ -2,8 +2,8 @@
 Changelog for package lua_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.1 (2021-07-03)
+------------------
 * Merge branch 'main' of https://github.com/OUXT-Polaris/lua_vendor into workflow/foxy
 * Merge pull request `#2 <https://github.com/OUXT-Polaris/lua_vendor/issues/2>`_ from OUXT-Polaris/workflow/dashing
   update CI workflow for dashing
