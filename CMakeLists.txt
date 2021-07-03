@@ -20,8 +20,8 @@ macro(build_lua)
 
   include(ExternalProject)
 
-  set( lua_source_path ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install/src/lua-ext )
-  set( lua_cmake_file_path ${lua_source_path}/CMakeLists.txt )
+  set( lua_source_path ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install/src/lua-ext)
+  set( lua_cmake_file_path ${lua_source_path}/CMakeLists.txt)
 
   externalproject_add(lua-ext
     PREFIX            ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install
