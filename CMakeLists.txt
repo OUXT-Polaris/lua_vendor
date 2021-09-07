@@ -28,7 +28,8 @@ macro(build_lua)
     PATCH_COMMAND
       COMMAND echo cmake_minimum_required( VERSION 3.2 ) > ${lua_cmake_file_path}
       COMMAND echo file( GLOB_RECURSE lua_sources src/*.c ) >> ${lua_cmake_file_path}
-      COMMAND echo list( REMOVE_ITEM lua_sources $\{CMAKE_CURRENT_SOURCE_DIR}/src/lua.c $\{CMAKE_CURRENT_SOURCE_DIR}/src/luac.c ) >> ${lua_cmake_file_path}
+      COMMAND echo list( REMOVE_ITEM lua_sources $\{CMAKE_CURRENT_SOURCE_DIR}/src/lua.c $\{CMAKE_CURRENT_SOURCE_DIR}/src/luac.c ) \
+        >> ${lua_cmake_file_path}
       COMMAND echo project( lua_vendor ) >> ${lua_cmake_file_path}
       COMMAND echo add_library( lua_vendor SHARED $\{lua_sources} ) >> ${lua_cmake_file_path}
       COMMAND echo install( TARGETS lua_vendor DESTINATION lib ) >> ${lua_cmake_file_path}
