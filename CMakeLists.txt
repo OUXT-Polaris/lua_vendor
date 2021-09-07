@@ -20,7 +20,7 @@ macro(build_lua)
   include(ExternalProject)
   set(lua_source_path ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install/src/lua-ext)
   set(lua_cmake_file_path ${lua_source_path}/CMakeLists.txt)
-  externalproject_add(lua-ext
+  externalproject_add( lua-ext
     PREFIX            ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}_install
     INSTALL_DIR       ${CMAKE_INSTALL_PREFIX}
     URL               http://www.lua.org/ftp/lua-5.3.2.tar.gz
