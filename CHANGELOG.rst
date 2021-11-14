@@ -2,8 +2,8 @@
 Changelog for package lua_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.2 (2021-11-14)
+------------------
 * Setup workflow (`#18 <https://github.com/OUXT-Polaris/lua_vendor/issues/18>`_)
 * Setup workflow (`#17 <https://github.com/OUXT-Polaris/lua_vendor/issues/17>`_)
 * Setup workflow (`#16 <https://github.com/OUXT-Polaris/lua_vendor/issues/16>`_)
